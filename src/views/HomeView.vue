@@ -707,11 +707,11 @@ onMounted(() => {
   <main>
     <div class="container">
 
-      <h1>Bollards!!</h1>
+      <h1>Bollards!!</h1><br>
 
       <div class="question">
 
-        <img :src="'images128/'+state.img" height="256"
+        <img :src="'images128/'+state.img" class="main-img"
           @click="reset()"
           />
 
@@ -738,11 +738,16 @@ onMounted(() => {
 <style>
 
 .container {
-  padding: 1em 3em 1em 3em;
+  padding: 1em 2em 1em 2em;
+  max-width: 600px;
 }
 
 .btn {
   margin-top: 0.75em
+}
+
+.main-img {
+  width: 100%
 }
 
 </style>
