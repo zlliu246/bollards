@@ -684,7 +684,7 @@ function handleButtonClick(option, i) {
 }
 
 function getButtonClass(i) {
-  let cls = "btn btn-lg"
+  let cls = "btn"
   if (state.buttonStates[i] == null) cls += " btn-secondary"
   else if (state.buttonStates[i] == "wrong") cls += " btn-danger"
   else if (state.buttonStates[i] == "correct") cls += " btn-success"
